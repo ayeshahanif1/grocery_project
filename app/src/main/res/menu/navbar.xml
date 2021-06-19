@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/fruits"
+        android:title="Fruits"
+        android:icon="@drawable/ic_fruitsnav"/>
+    <item
+        android:id="@+id/vegetables"
+        android:title="Vegetables"
+        android:icon="@drawable/ic_vegg"/>
+    <item
+        android:id="@+id/seafood"
+        android:title="Seafood"
+        android:icon="@drawable/ic_seafoodnav"/>
+    <item
+        android:id="@+id/grocery"
+        android:title="Grocery"
+        android:icon="@drawable/ic_grocerynav"/>
+    <item
+        android:id="@+id/beverages"
+        android:title="Beverages"
+        android:icon="@drawable/ic_beveragenav"/>
+    <item
+        android:id="@+id/dairy"
+        android:title="Dairy"
+        android:icon="@drawable/ic_dairynav"/>
+    <item
+        android:id="@+id/bakery"
+        android:title="Bakery"
+        android:icon="@drawable/ic_bakerynav"/>
+    <item android:title="App" >
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/mycart"
+                    android:title="My Cart"
+                    android:icon="@drawable/ic_baseline_shopping_cart_24"/>
+                <item
+                    android:id="@+id/share"
+                    android:title="Share"
+                    android:icon="@drawable/ic_baseline_share_24"/>
+                <item
+                    android:id="@+id/signin"
+                    android:title="Sign In"
+                    android:icon="@drawable/ic_baseline_login_24"/>
+                <item
+                    android:id="@+id/logout"
+                    android:title="Logout"
+                    android:icon="@drawable/ic_baseline_logout_24"/>
+            </group>
+        </menu>
+    </item>
+
+</group>
+</menu>
