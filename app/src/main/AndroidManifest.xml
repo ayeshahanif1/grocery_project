@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".vegetables"></activity>
-        <activity android:name=".addproduct" />
+        <activity android:name=".MyCartActivity"></activity>
+        <activity android:name=".addproduct"></activity>
         <activity android:name=".viewuser" />
         <activity android:name=".menuofadmin" />
-        <activity android:name=".fruits" />
-        <activity android:name=".home" />
+        <activity android:name=".activity_food_detail" />
+        <activity android:name=".home"></activity>
         <activity android:name=".signup" />
-        <activity android:name=".login" />
+        <activity android:name=".login"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

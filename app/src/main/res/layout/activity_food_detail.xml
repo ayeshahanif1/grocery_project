@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_food_detail">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@id/cart"
+        android:id="@+id/rv_food"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:background="@drawable/back"
+        android:id="@+id/cart"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_cart_state"
+            android:text="hdskfhkdshkjs"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_open_cart"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="OPEN CART"
+            android:textColor="#FBFBFB"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:onClick="openCart"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

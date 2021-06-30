@@ -16,8 +16,6 @@ import com.google.android.material.navigation.NavigationView;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
-import java.util.Objects;
-
 public class home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 //  for carousel
@@ -72,21 +70,39 @@ public class home extends AppCompatActivity implements NavigationView.OnNavigati
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
+        Intent intent = new Intent(getBaseContext() , activity_food_detail.class);
          switch (item.getItemId())
         {
            case R.id.fruits:
-               Intent intent = new Intent(this,fruits.class);
-                startActivity(intent);
+                intent.putExtra(Constants.KEY_INTENT_CAT_NAME , Category.Fruits.name());
                 break;
             case R.id.vegetables:
-               intent = new Intent(this, vegetables.class);
-                startActivity(intent);
+                intent.putExtra(Constants.KEY_INTENT_CAT_NAME , Category.Vegetables.name());
+                break;
+            case R.id.seafood:
+                intent.putExtra(Constants.KEY_INTENT_CAT_NAME , Category.Seafood.name());
+                break;
+            case R.id.grocery:
+                intent.putExtra(Constants.KEY_INTENT_CAT_NAME , Category.Grocery.name());
+                break;
+            case R.id.dairy:
+                intent.putExtra(Constants.KEY_INTENT_CAT_NAME , Category.Dairy.name());
+                break;
+            case R.id.beverages:
+                intent.putExtra(Constants.KEY_INTENT_CAT_NAME , Category.Beverages.name());
+                break;
+            case R.id.bakery:
+                intent.putExtra(Constants.KEY_INTENT_CAT_NAME , Category.Bakery.name());
+                break;
+            case R.id.mycart:
+                intent = null;
+                intent = new Intent(getBaseContext() , MyCartActivity.class);
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + item.getItemId());
         }
         drawerLayout.closeDrawer(GravityCompat.START);
+        startActivity(intent);
         return true;
     }
 }
